@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  ul
+   for row in colors
+    li #{row.color} 
+      small
+        a(href='/delete?id=#{row.id}') delete
+
+  form(action='/addColor', method='get')
+    span Enter a color:
+    input(type="text", name="color")
+    input(type="submit")
