@@ -58,7 +58,7 @@ function connectToDB() {
   // all the neccessary information.
   connection = mysql.createConnection({
     host : 's6vjs2alrv.database.windows.net:1433',
-    user : 'nodejs',
+    user : 'nodejs@s6vjs2alrv',
     password : 'Passw0rd',
     database : 'nodejs'
   });
